@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  gpt:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    restart: unless-stopped
+    container_name: gpt
