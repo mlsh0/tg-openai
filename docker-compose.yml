@@ -1,10 +1,15 @@
-version: '3.9'
+version: "3.9"
 services:
   gpt:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - .:/app
-    restart: unless-stopped
+    image: ghcr.io/mlsh0/tg-openai:latest
     container_name: gpt
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=false"
+    env_file:
+      - ./.env
+    restart: unless-stopped
+networks:
+  proxy:
+    external: true

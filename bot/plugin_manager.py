@@ -2,9 +2,6 @@ import json
 
 from plugins.gtts_text_to_speech import GTTSTextToSpeech
 from plugins.auto_tts import AutoTextToSpeech
-from plugins.ddg_image_search import DDGImageSearchPlugin
-from plugins.ddg_translate import DDGTranslatePlugin
-from plugins.ddg_web_search import DDGWebSearchPlugin
 from plugins.wolfram_alpha import WolframAlphaPlugin
 from plugins.deepl import DeeplTranslatePlugin
 from plugins.worldtimeapi import WorldTimeApiPlugin
@@ -19,9 +16,6 @@ class PluginManager:
         enabled_plugins = config.get('plugins', [])
         plugin_mapping = {
             'wolfram': WolframAlphaPlugin,
-            'ddg_web_search': DDGWebSearchPlugin,
-            'ddg_translate': DDGTranslatePlugin,
-            'ddg_image_search': DDGImageSearchPlugin,
             'worldtimeapi': WorldTimeApiPlugin,
             'deepl_translate': DeeplTranslatePlugin,
             'gtts_text_to_speech': GTTSTextToSpeech,
