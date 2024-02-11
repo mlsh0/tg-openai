@@ -6,7 +6,7 @@ A [Telegram bot](https://core.telegram.org/bots/api) that integrates with OpenAI
 - OpenAI API
 
 ### Configuration
-Customize the configuration by copying `.env.example` and renaming it to `.env`, then editing the required parameters as desired:
+Customize the configuration `variables.env`:
 
 | Parameter                   | Description                                                                                                                                                                                                                   |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

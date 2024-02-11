@@ -8,8 +8,13 @@ services:
     labels:
       - "traefik.enable=false"
     env_file:
-      - ./.env
+      - ./variables.env
     restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: 3m
+
 networks:
   proxy:
     external: true
