@@ -1,0 +1,13 @@
+__pycache__
+/.idea
+.env
+.DS_Store
+/usage_logs
+venv
+/.cache
+variables.env
+.git
+.vscode
+LICENSE
+README.md
+.gitignore
