@@ -1,6 +1,5 @@
-LABEL org.opencontainers.image.source = "https://github.com/mlsh0/oci-arm-docker"
 FROM python:3.11-alpine3.19
-
+LABEL org.opencontainers.image.source = "https://github.com/mlsh0/oci-arm-docker"
 ENV PYTHONFAULTHANDLER=1 \
      PYTHONUNBUFFERED=1 \
      PYTHONDONTWRITEBYTECODE=1 \
