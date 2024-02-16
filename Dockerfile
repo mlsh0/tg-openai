@@ -1,4 +1,5 @@
-FROM python:3.11-alpine
+LABEL org.opencontainers.image.source = "https://github.com/mlsh0/oci-arm-docker"
+FROM python:3.11-alpine3.19
 
 ENV PYTHONFAULTHANDLER=1 \
      PYTHONUNBUFFERED=1 \
